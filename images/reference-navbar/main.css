@@ -1,0 +1,288 @@
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  background-color: transparent;
+  display: flex;
+  position: absolute;
+  z-index: 2; /* Setting z-index higher than carousel to keep navbar on top */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.left-list-box {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.right-list-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.right-list,
+.left-list {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+  align-items: center;
+}
+.right-list {
+  padding-left: 0px;
+}
+.right-list-box {
+  justify-content: flex-start;
+}
+
+.left-list li,
+.right-list li {
+  text-decoration: none;
+  margin: 10px 30px;
+}
+.left-list li a,
+.right-list li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.logo-box img {
+  height: 100px;
+}
+.logo-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.carousel-caption {
+  margin-top: 50px;
+}
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.carousel {
+margin-top: 0px; 
+position: relative;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.carousel-item img {
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+}
+/* Slow Zoom-In Animation  */
+@keyframes slow-zoom-in {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* carousal effects */
+.carousel-item img {
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  animation: slow-zoom-in 5s infinite;
+}
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.logo-img {
+  border-radius: 50px;
+}
+/* menu section styles */
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4ffff;
+}
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 0.3fr 0.3fr 0.5fr;
+  grid-template-rows: 0.6fr 0.6fr 0.8fr;
+  background-color: rgb(242, 236, 238);
+  height: 600px;
+  width: 60%;
+  grid-gap: 10px;
+}
+.items {
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.item1 {
+  grid-row: 1 / span 2;
+  background-image: url(images/service1.jpg);
+}
+.item2 {
+  grid-row: 1 / span 2;
+  background-image: url(images/service\ 2.jpg);
+}
+.item3 {
+  background-image: url(images/bg5-transformed.jpeg);
+}
+.item4 {
+  background-image: url(images/bg4.jpg);
+}
+.item5 {
+  grid-column: span 2;
+  background-image: url(images/service\ 3.jpg);
+}
+.item6 {
+  background-image: url(images/bg2.jpg);
+  justify-items: center;
+}
+
+.menu-img {
+  background-image: url(images/service1.jpg);
+}
+/* menu image hover */
+.items {
+position: relative;
+overflow: hidden;
+transition: transform 0.3s;
+}
+.items::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+.items:hover::before {
+  opacity: 0.9;
+}
+/* this will provide menu zoom in size */
+.items:hover {
+  transform: scale(1.05);  
+}
+
+
+/* testimonial stylings */
+
+.testimonial {
+  background-color: #d7d4d4;
+}
+
+.testimonial h2 {
+  color: #161616; 
+}
+
+.testimonial p {
+  color: #666; 
+}
+
+.testimonial-item {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 15px auto;
+}
+
+.testimonial-item h4 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.testimonial-item p:last-child {
+  margin-bottom: 0;
+}
+
+/* RESTAURANT DETAILS STYLING  */
+
+
+.restaurant-details {
+  background-color: #f5f3f3; 
+}
+
+.restaurant-details h2 {
+  color: #333; 
+}
+
+.restaurant-details p {
+  color: #666; 
+}
+
+/* footer */
+
+
+.footer {
+  background-color: #0a0909;
+}
+
+.footer h5 {
+  color: #fff; 
+}
+
+.footer p {
+  color: #ccc; 
+}
+.menu-links{
+  color: #fff;
+}
+
+/* menu buttons section */
+.items {
+  position: relative;
+  overflow: hidden;
+}
+
+.item-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  visibility: hidden; 
+  transition: visibility 0.3s;
+}
+
+.items:hover .item-content {
+  visibility: visible; 
+}
+
+.btn {
+  background-color: #666;
+  margin-top: 10px; 
+}
+
+
+
+

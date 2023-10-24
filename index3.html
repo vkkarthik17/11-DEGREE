@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container ">
+            <h2 class="object" data-value="3">Welcome to Burger Spot</h2>
+            <img  src="p images/bugpng.png" class="object obj-img" data-value="-2" alt=""> 
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("mousemove", parallax);
+
+function parallax(e) {
+    document.querySelectorAll(".object").forEach(function (move) {
+        var moving_value = move.getAttribute("data-value");
+        var x = e.clientX * moving_value /250 ;
+        var y = e.clientY * moving_value /250 ;
+
+        move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+    });
+}
+
+    </script>
+</body>
+</html>

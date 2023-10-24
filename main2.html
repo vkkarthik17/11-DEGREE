@@ -1,0 +1,391 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to 11 DEGREE</title>
+    <link rel="stylesheet" href="main2.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tilt+Prism&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hero overflow-hidden">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+          <!-- logo -->
+          <a class="navbar-brand fs-1 brand-name" href="#">11 DEGREE</a>
+          <!-- Toggle btn -->
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- sidebar -->
+          <div
+            class="sidebar offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <!-- sidebar header -->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">My Bar</h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white shadow-none"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <!-- sidebar body -->
+            <div
+              class="offcanvas-body d-flex flex-lg-row flex-column p-4 p-lg-0"
+            >
+              <ul
+                class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#About">About</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <!-- Order online   -->
+              <div
+                class="d-flex flex-column justify-content-center align-items-center gap-3"
+              >
+                <a
+                  class="text-white text-decoration-none px-3 py-1 rounded-4 order-now"
+                  style="background-color: rgb(247, 175, 41)"
+                  href="#"
+                  >Order Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="hero-text vh-90 d-flex flex-column justify-content-center align-items-left text-white fs-1"
+      >
+        <h1 class="hero-heading">Savor Every Flavor Under One Roof</h1>
+        <p style="font-size: 0.4em">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
+          Sunt cupiditate ratione commodi.
+        </p>
+        <a href="#menu"><button class="view-menu-button">View Menu</button></a>
+      </div>
+    </div>
+
+    <!-- <section id="menu">
+      <div class="menu-title">
+        <h2>OUR MENU</h2>
+      </div>
+      <br>
+      <div class="grid-wrapper">
+        <div class="items item1">
+          <div class="item-content">
+            <button type="button" class="btn btn-dark menu-button" onclick="window.location.href='Biryani.html'">Biryani</button>
+          </div>
+        </div>
+        <div class="items item2">
+          <div class="item-content">
+            <button type="button" class="btn btn-dark menu-button" onclick="window.location.href='Kebabs.html'">Kebabs</button>
+          </div>
+        </div>
+        <div class="items item3">
+          <div class="item-content">
+            <button type="button" class="btn btn-dark menu-button" onclick="window.location.href='Desserts.html'">Desserts</button>
+          </div>
+        </div>
+        <div class="items item4">
+          <div class="item-content">
+            <button type="button" class="btn btn-dark menu-button" onclick="window.location.href='Drinks.html'">Drinks</button>
+          </div>
+        </div>
+        <div class="items item5">
+        <a href="index3.html">
+          <div class="item-content">
+              <button type="button" class="btn btn-dark menu-button" onclick="window.location.href='index3.html'">Specials</button>
+            </div>
+          </a>
+          
+        </div>
+        <div class="items item6">
+          <div class="item-content">
+            <button type="button" class="btn btn-dark menu-button" onclick="window.location.href='Salads.html'">Salads</button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="container card-section" id="menu">
+      <div class="heading-container">
+        <h2>Browse categories</h2>
+       
+        <hr class="horizontal-line" />
+      </div>
+      <div class="flexbox">
+        <a href="biryanipage.html">
+          <div class="food-card">
+            <img
+              src="https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyeWFuaXxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Food Item"
+            />
+            <div class="card-content">
+              <h3>Pizza Margherita</h3>
+              <p>
+                A classic Italian pizza topped with fresh tomatoes, mozzarella,
+                and basil.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="biryanipage.html">
+          <div class="food-card">
+            <img
+              src="https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyeWFuaXxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Food Item"
+            />
+            <div class="card-content">
+              <h3>Pizza Margherita</h3>
+              <p>
+                A classic Italian pizza topped with fresh tomatoes, mozzarella,
+                and basil.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="biryanipage.html">
+          <div class="food-card">
+            <img
+              src="https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyeWFuaXxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Food Item"
+            />
+            <div class="card-content">
+              <h3>Pizza Margherita</h3>
+              <p>
+                A classic Italian pizza topped with fresh tomatoes, mozzarella,
+                and basil.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="biryanipage.html">
+          <div class="food-card">
+            <img
+              src="https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyeWFuaXxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Food Item"
+            />
+            <div class="card-content">
+              <h3>Pizza Margherita</h3>
+              <p>
+                A classic Italian pizza topped with fresh tomatoes, mozzarella,
+                and basil.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="biryanipage.html">
+          <div class="food-card">
+            <img
+              src="https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyeWFuaXxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Food Item"
+            />
+            <div class="card-content">
+              <h3>Pizza Margherita</h3>
+              <p>
+                A classic Italian pizza topped with fresh tomatoes, mozzarella,
+                and basil.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="biryanipage.html">
+          <div class="food-card">
+            <img
+              src="https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyeWFuaXxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Food Item"
+            />
+            <div class="card-content">
+              <h3>Pizza Margherita</h3>
+              <p>
+                A classic Italian pizza topped with fresh tomatoes, mozzarella,
+                and basil.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="biryanipage.html">
+          <div class="food-card">
+            <img
+              src="https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyeWFuaXxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Food Item"
+            />
+            <div class="card-content">
+              <h3>Pizza Margherita</h3>
+              <p>
+                A classic Italian pizza topped with fresh tomatoes, mozzarella,
+                and basil.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="biryanipage.html">
+          <div class="food-card">
+            <img
+              src="https://images.unsplash.com/photo-1599043513900-ed6fe01d3833?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmlyeWFuaXxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Food Item"
+            />
+            <div class="card-content">
+              <h3>Pizza Margherita</h3>
+              <p>
+                A classic Italian pizza topped with fresh tomatoes, mozzarella,
+                and basil.
+              </p>
+            </div>
+          </div>
+        </a>
+       
+      </div>
+    </section>
+    <section class="about-section" id="About">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          Welcome to 11DEGREE, where food meets passion. We are a team of
+          dedicated culinary enthusiasts who are committed to providing you with
+          an exceptional dining experience.
+        </p>
+        <p>
+          Our journey began with a simple idea: to create delicious and
+          memorable dishes that bring people together. We believe in the power
+          of good food to create moments of joy and connection.
+        </p>
+        <p>
+          Our talented chefs blend traditional flavors with a modern twist,
+          using only the freshest ingredients sourced from local farmers and
+          producers. Each dish is carefully crafted to satisfy your senses and
+          leave you craving for more.
+        </p>
+
+        <p>Bon appétit!</p>
+      </div>
+      <div class="parent-block">
+        <div class="child-block">
+          <img
+            src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJpcnlhbml8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&w=500&q=60"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <div class="flex-wrapper expandable-items container">
+      <div
+        class="expandable-item"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1653852883277-c4b4b9e020e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29vbGRyaW5rc3xlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=600&q=60');
+        "
+      >
+        <a class="u-link-block u-link-inherit" href="series/dci-ryan-series/">
+          <div class="content"></div>
+        </a>
+      </div>
+      <div
+        class="expandable-item"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1550547660-d9450f859349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnVyZ2VyfGVufDB8fDB8fHwy&auto=format&fit=crop&w=600&q=60');
+        "
+      >
+        <a
+          class="u-link-block u-link-inherit"
+          href="series/dr-alex-gregory-series/"
+        >
+          <div class="content"></div>
+        </a>
+      </div>
+      <div
+        class="expandable-item"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&w=600&q=60');
+        "
+      >
+        <a
+          class="u-link-block u-link-inherit"
+          href="series/summer-suspense-series"
+        >
+          <div class="content"></div>
+        </a>
+      </div>
+      <div
+        class="expandable-item"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1657807059497-84d435d74e04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGthYmFic3xlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=600&q=60');
+        "
+      ></div>
+      <div
+        class="expandable-item"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1632158930341-46604b637a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmJxfGVufDB8fDB8fHwy&auto=format&fit=crop&w=600&q=60');
+        "
+      ></div>
+      <div
+        class="expandable-item"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1589302168068-964664d93dc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmlyeWFuaXxlbnwwfHwwfHx8Mg%3D%3D&auto=format&fit=crop&w=600&q=60');
+        "
+      >
+        <a class="u-link-block u-link-inherit" href="series/other-books/">
+          <div class="content"></div>
+        </a>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a class="brand-name fs-2" href="#">11 DEGREE</a>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+         
+        <div class="footer-bottom">
+          <p>&copy; 2023 Food Company. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</html>
